@@ -9,7 +9,7 @@ def download_data(stock, start_date, end_date):
     df['returns'] = df['Adj Close'].pct_change()
     return df
 
-
+# n - VaR after n days
 def calculate_var_n(stock_data, position, c, n):
     df = stock_data
     mu = np.mean(df['returns'])
