@@ -21,8 +21,3 @@ def calculate_var_n(stock_data, position, c, n):
 stock = download_data('META', '2022-04-02', '2024-03-01')
 
 Var = calculate_var_n(stock, 100000, 0.99, 1)
-
-
-
-
- 
